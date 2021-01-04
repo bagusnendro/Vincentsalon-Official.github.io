@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../assets/images/icon/favicon.ico">
+
+    <title>Dashboard</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../assets/css/carousel.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-danger">
+        <a class="navbar-brand mb-0 h1" href="#">VINCENT SALON</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Log Out</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#DataTabel">Data Tabel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#TentangWebsite">Tentang Website</a>
+            </li>
+
+            <!-- Drop Down Navbar -->
+
+              <!--
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Tabel
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Tabel Jasa</a>
+                      <a class="dropdown-item" href="#">Tabel Pelanggan</a>
+                      <a class="dropdown-item" href="#">Tabel Pemesanan</a>
+                      <a class="dropdown-item" href="#">Tabel Pegawai</a>                
+                    </div>
+                  </li>            
+                </ul> 
+              -->
+            <!-- Drop Down Navbar End-->        
+
+                  <!--  Search Bar
+                    <form class="form-inline mt-2 mt-md-0">
+                      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                  -->
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li class="item1 active"></li>
+          <li class="item2"></li>
+          <li class="item3"></li>       
+        </ol>
+
+        <div class="carousel-inner">
+          
+          <div class="carousel-item active" id="0">
+            <img src="../assets/images/banner/banner-sample.jpeg" img class="first-slide" alt="Slide pertama">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>SITUS ADMINISTRASI<br>VINCENT SALON</h1>
+                <p>Selamat datang di website administrasi data pemesanan pelanggan <br>Vincent Salon</p>
+                <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">Lihat Tampilan Muka</a></p>-->
+              </div>
+            </div>            
+
+          </div>
+
+          <div class="carousel-item" id="1">
+            <img src="../assets/images/banner/banner-sample2.jpeg" img class="second-slide" alt="Slide kedua">
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1>ADMIN PANEL</h1>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit</p>
+                <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" id="2">
+            <img src="../assets/images/banner/banner-sample3.jpeg" img class="third-slide" alt="Slide ketiga">
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1>MANUAL PENGGUNA ADMIN</h1>
+                <p>Masih ingin mengetahui fitur-fitur yang ada di website ini dengan lebih lanjut?
+               <br>Silahkan menggunakan manual pengguna yang telah kami sediakan
+                </p>
+                <p><a class="btn btn-lg btn-primary" href="#" target="_blank" rel="noopener noreferrer" role="button">Lihat manual pengguna</a></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+      <!--Carousel Script-->
+      <!--Gunakan untuk menjalankan carouselnya-->
+      <script>
+        $(document).ready(function(){
+          // Activate Carousel
+          $("#myCarousel").carousel();
+            
+          // Enable Carousel Indicators
+          $(".item1").click(function(){
+            $("#myCarousel").carousel(0);
+          });
+          $(".item2").click(function(){
+            $("#myCarousel").carousel(1);
+          });
+          $(".item3").click(function(){
+            $("#myCarousel").carousel(2);
+          });
+            
+          // Enable Carousel Controls
+          $(".carousel-control-prev").click(function(){
+            $("#myCarousel").carousel("prev");
+          });
+          $(".carousel-control-next").click(function(){
+            $("#myCarousel").carousel("next");
+          });
+        });
+        </script>   
+      <!--Carousel Script End-->           
+
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->     
+ 
+
+  <div id="DataTabel">      
+      <div class="container marketing">
+
+
+        <br>
+        <br>
+        <br>
+        <br>        
+        <hr>
+        <i class="fas fa-cloud"><h1>DATA TABEL</h1></i>
+        <hr>
+        <br>
+        <br>        
+
+        <!-- Three columns of text below the carousel -->
+
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="../assets/images/sample-1.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>TABEL JASA</h2>
+            <p class="lead">Kelola data jasa</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Kelola &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->      
+
+
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="../assets/images/sample-2.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>TABEL PELANGGAN</h2>
+            <p class="lead">Kelola data pelanggan</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Kelola &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          
+
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="../assets/images/sample-4.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>TABEL PEGAWAI</h2>
+            <p class="lead">Kelola data pegawai</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Kelola &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->           
+
+
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="../assets/images/sample-3.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>TABEL <br>PEMESANAN</h2>
+            <p class="lead">Kelola dan cetak laporan pemesanan</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Kelola &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+
+          <div class="col-lg-4">
+          <!-- Kosongan -->
+          </div>
+          
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="../assets/images/sample-4.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>TABEL <br>DETAIL PEMESANAN</h2>
+            <p class="lead">Lihat detail pemesanan</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Kelola &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->             
+                
+
+        </div><!-- /.row -->
+
+
+  <div id="TentangWebsite">
+        <!-- START THE FEATURETTES -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <i class="fas fa-cloud"><h1>TENTANG WEBSITE</h1></i>
+        <hr>
+        <br>
+        <br>        
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading"><span class="text-muted">Dikembangkan dengan Framework Laravel 7.0</span></h2>
+            <br>
+            <p class="lead">
+              Laravel adalah pengembangan website berbasis MVP yang ditulis dalam PHP yang dirancang untuk meningkatkan kualitas perangkat lunak
+              dengan mengurangi biaya pengembangan awal dan biaya pemeliharaan, dan untuk meningkatkan pengalaman bekerja dengan aplikasi dengan menyediakan sintaks yang ekspresif, jelas dan menghemat waktu.
+              <br>
+              <br>
+              Fitur Website:
+                <ul>
+                  <li p class="lead">Menjalankan navigasi Frontend (User) dan Backend (Admin)</li>
+                  <li p class="lead">Mengeksekusi perintah CRUD saat mengelola data tabel</li>
+                  <li p class="lead">Menghasilkan laporan tabel transaksi dalam bentuk PDF dan Excel</li>
+                </ul>
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" img src="../assets/images/feature-image/Laravel Logo Transparent.png" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading"><span class="text-muted">Tampilan website yang ramah pengguna serta modern</span></h2>
+            <br>
+            <p class="lead">
+              Dengan dukungan framework CSS dan HTML Bootstrap, website ini dapat memperoleh tampilan frontend dan backend yang simple dan interaktif.
+          <br>
+          <br>Versi : <a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/">4.1</a>          
+          <br>Tema: <a href="https://getbootstrap.com/docs/4.1/examples/carousel/">Carousel Theme</a>
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading"><span class="text-muted">Dirancang untuk memenuhi kebutuhan proses bisnis yang berjalan di usaha klien</span></h2>
+            <br>
+            <p class="lead">
+              Diadakannya website ini ditujukan untuk mempermudah pelanggan baik pelanggan baru maupun pelanggan sehari-hari Vincent Salon
+              untuk dapat melakukan pemesanan dan penjadwalan jasa di salon secara online.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+  
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2020 Vincent Salon <!--&middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a>--></p>
+      </footer>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../assets/js/carousel/jquery-slim.min.js"><\/script>')</script>
+    <script src="../assets/js/carousel/popper.min.js"></script>
+    <script src="../assets/js/carousel/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../assets/js/carousel/holder.min.js"></script>
+  </body>
+</html>
